@@ -10,7 +10,7 @@ const PartSchema = new Schema({
   stock: Number,
 });
 
-PartSchema.virtual("url").get(() => {
+PartSchema.virtual("url").get(function () {
   return `parts/${this._id}`;
 });
 

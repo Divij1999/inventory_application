@@ -1,0 +1,14 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  display: flex;
+  border-right: 1px solid black;
+}
