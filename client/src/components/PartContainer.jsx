@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Part } from "./Part";
+import "../stylesheets/partContainer.css";
 
-const Parts = () => {
+const PartContainer = () => {
   const [parts, setParts] = useState([]);
 
   const getParts = async () => {
@@ -20,7 +21,7 @@ const Parts = () => {
   }, []);
 
   return (
-    <div>
+    <div className="partContainer">
       <>
         {parts.map((part) => (
           <Part key={part._id} partDetails={part} />
@@ -30,4 +31,4 @@ const Parts = () => {
   );
 };
 
-export { Parts };
+export { PartContainer };

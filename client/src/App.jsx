@@ -1,13 +1,12 @@
-import { useState } from "react";
 import "./stylesheets/app.css";
 import { Sidebar } from "./components/Sidebar";
-import { Parts } from "./components/Parts";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
     <div className="body">
       <Sidebar />
-      <Parts />
+      <Outlet />
     </div>
   );
 };

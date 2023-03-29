@@ -1,0 +1,7 @@
+.partContainer {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 3vw;
+  border: 1px solid black;
+}
